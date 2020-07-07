@@ -1,0 +1,201 @@
+
+/*～hover{}はカーソルを重ねたときを示してる*/
+
+body{
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro', 
+  sans-serif;
+  background-color: #000000
+  /*background-image: url("img/色反転_紋様1_min.jpg");*/
+}
+
+/*サイト名*/
+.site h1 a{
+  color: #ff0000;
+  /*aタグで囲んだ文字列の下線を消す*/
+  text-decoration: none;
+  font-family: 'ＭＳ 明朝'
+  
+}
+
+.site h1{
+  margin: 0;
+  font-size: 30px 
+}
+
+/*ナビゲーション*/
+.menu ul{
+  /*多分デフォルトでmarginとpaddingが設定されてるので初期値に戻してる*/
+  margin: 0;
+  padding: 0;
+  /*黒いちょぼ消してる*/
+  list-style: none
+}
+
+.menu marquee{
+  color: #ff0000
+}
+
+.menu li a{
+  display: block;
+  padding: 15px;
+  color: #ff0000;
+  font-size: 14px;
+  text-align:center;
+  text-decoration: none
+}
+
+.menu li a:hover{
+  /*マウスを上に乗っけたら四角で囲まれるやつ。よくみるやつ*/
+  background-color: #ff0000;
+  color: #ffff00;
+  font-size: 24px
+}
+
+.menu ul:after{
+  content: "";
+  display: block;
+  clear: both
+}
+
+.menu li{
+  /*float: left;*/
+  width: auto;
+}
+
+/*記事*/
+.kiji h1{
+  color: #004631;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align:right;
+  font-size: 36px
+
+}
+
+.kiji p{
+  color: #ffff00;
+  margin-top: 0;
+  margin-bottom: 20px
+}
+
+.kiji img{
+  max-width: 100%;
+  height: auto
+}
+
+/*サイドメニュー*/
+.sidemenu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.sidemenu li a{
+  display: block;
+  padding: 5px;
+  color: #ffff00;
+  font-size: 14px;
+  text-decoration: none
+}
+
+.sidemenu li a:hover{
+  background-color: #ff0000;
+  font-size: 24px
+}
+
+.sidemenu h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  /*border-bottom: dotted 2px #dddddd;*/
+  color: #beaeae;
+  font-size:50px
+}
+
+/*おすすめの記事*/
+.osusume ul{
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.osusume li a{
+  display: block;
+  padding: 5px;
+  color: #ffff00;
+  font-size: 14px;
+  text-decoration: none
+}
+
+.osusume li a:hover{
+  background-color: #ad0000;
+  font-size: 50px
+}
+
+.osusume h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  /*border-bottom: dotted 2px #dddddd;*/
+  color: #1f5500;
+  font-size:18px
+}
+
+/*人気の記事*/
+.ninki ul{
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.ninki li a{
+  display: block;
+  padding: 2px;
+  color: #083774;
+  font-size: 14px;
+  text-decoration: none
+}
+
+.ninki li a:hover{background-color: #eeeeee}
+
+.ninki h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  /*border-bottom: dotted 2px #dddddd;*/
+  color: #680072;
+  font-size: 34px
+}
+
+/*コピーライト：下のCopyright © TimeSwitchのところ*/
+.copyright p{
+  margin:0;
+  color: #666666;
+  font-size: 14px;
+}
+
+/*BOX2の色を付ける*/
+/*.box2{background-color: #c200f3}*/
+
+
+
+
+
+/*画面の横サイズが768px以上で@media中を反映*/
+@media(min-width: 768px){
+/*boxA以降が回り込まないようにするためのやつ*/
+  .boxA:after{
+    /*テキスト書けるやつ*/
+    content:"";
+    display: block;
+    /*テキストの回り込みを防ぐ奴*/
+    clear: both;
+  }
+
+  .box3{
+    float: left;
+    width: 70%
+  }
+
+  .box4{
+    float:left;
+    width: 30%
+  }
+}
